@@ -6,7 +6,9 @@ window.addEventListener("DOMContentLoaded",function() {
   dudeTemplate = document.querySelector("#dudeTemplate");
 
   //Challenge 4: Create an array of dudes at random locations.
-  
+  for(let i = 0; i < 20; i++){
+    
+  }
   loop();  
 })
 function loop(){

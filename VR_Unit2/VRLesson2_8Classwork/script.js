@@ -11,7 +11,11 @@ window.addEventListener("DOMContentLoaded",function() {
 function loop(){
   target.a += target.da;
 
-  target.setAttribute("rotation",{x:target.a, y:0, z: 0});
+  if(target.a < 90){
+    target.da = -target.da;
+  }
 
+  target.setAttribute("rotation",{x:target.a, y:0, z: 0});
+  target.object3D.position.y = 0.5;
   window.requestAnimationFrame( loop );
 }
